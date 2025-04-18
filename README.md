@@ -274,13 +274,33 @@ This project includes a suite of unit tests using Google Test (gtest) to ensure 
 
 ### Test Directory Structure
 
-word_counter/
+WordCounter/
+├── src/
+│   ├── main.cpp
+│   ├── file_handle.cpp
+│   ├── temp_file.cpp
+│   ├── parser.cpp
+│   ├── chunk_processor.cpp
+│   ├── chunk_coordinator.cpp
+│   ├── word_counter.cpp
+├── include/
+│   ├── file_handle.hpp
+│   ├── file_word.hpp
+│   ├── temp_file.hpp
+│   ├── parser.hpp
+│   ├── chunk_processor.hpp
+│   ├── chunk_coordinator.hpp
+│   ├── word_counter.hpp
+├── CMakeLists.txt
+├── README.md
+├── TestDataGeneration/
+│   ├── generate_test.py          # Python script for generating input test files
 ├── tests/
-│   ├── test_main.cpp           # Verifies that the test framework is working.
-│   ├── test_parser.cpp         # Tests for SpaceSeparatedParser.
-│   ├── test_temp_file.cpp      # Tests for TempFile (RAII behavior, file creation/deletion).
-│   ├── test_file_handle.cpp    # Tests for SyscallFileHandle (read/write/seek).
-│   ├── test_word_counter.          # Integration-like test for WordCounter using small input files.    
+│   ├── test_main.cpp             # Python script for generating input test files
+│   ├── test_parser.cpp           # Python script for generating input test files
+│   ├── test_temp_file            # Python script for generating input test files
+│   ├── test_word_counter         # Python script for generating input test files
+└── ├── test_file_handle.cpp      # Python script for generating input test files
 
 ### How to Enable and Build Tests
 
