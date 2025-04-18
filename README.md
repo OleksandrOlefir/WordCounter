@@ -273,35 +273,15 @@ Generated files are compatible with the main program.
 This project includes a suite of unit tests using Google Test (gtest) to ensure correctness, robustness, and maintainability of core components. The tests cover file handling, parsing, temporary file management, and word counting logic.
 
 ### Test Directory Structure
-
+```
 WordCounter/
-├── src/
-│   ├── main.cpp
-│   ├── file_handle.cpp
-│   ├── temp_file.cpp
-│   ├── parser.cpp
-│   ├── chunk_processor.cpp
-│   ├── chunk_coordinator.cpp
-│   ├── word_counter.cpp
-├── include/
-│   ├── file_handle.hpp
-│   ├── file_word.hpp
-│   ├── temp_file.hpp
-│   ├── parser.hpp
-│   ├── chunk_processor.hpp
-│   ├── chunk_coordinator.hpp
-│   ├── word_counter.hpp
-├── CMakeLists.txt
-├── README.md
-├── TestDataGeneration/
-│   ├── generate_test.py          # Python script for generating input test files
 ├── tests/
 │   ├── test_main.cpp             # Python script for generating input test files
 │   ├── test_parser.cpp           # Python script for generating input test files
 │   ├── test_temp_file            # Python script for generating input test files
 │   ├── test_word_counter         # Python script for generating input test files
 └── ├── test_file_handle.cpp      # Python script for generating input test files
-
+```
 ### How to Enable and Build Tests
 
 - **Install Google Test (if not available system-wide)**:
