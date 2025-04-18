@@ -12,7 +12,7 @@ This C++ program counts the number of unique words in a large text file, designe
 
 ### Directory Structure
 ```
-word_counter/
+WordCounter/
 ├── src/
 │   ├── main.cpp
 │   ├── file_handle.cpp
@@ -36,8 +36,9 @@ word_counter/
 ├── tests/
 │   ├── test_main.cpp
 │   ├── test_parser.cpp
-│   ├── test_temp_file.cpp
-    └── test_file_handle.cpp
+│   ├── test_temp_file.
+│   ├── test_word_counter
+└── ├── test_file_handle.cpp
 
 ```
 
@@ -59,7 +60,7 @@ word_counter/
 - **CMakeLists.txt**: Configures the CMake build system, specifying source files, include directories, compiler settings, and threading dependencies.
 - **README.md**: Documents the project, including build and run instructions, techniques used, standards compliance, and file purposes.
 
-### Build Instructions
+### Build Instrinput_1gb_1000K_uniq.txtuctions
 1. **Create a build directory**:
    ```bash
    mkdir build
@@ -273,12 +274,13 @@ This project includes a suite of unit tests using Google Test (gtest) to ensure 
 
 ### Test Directory Structure
 
-tests/
-├── test_main.cpp              # Verifies that the test framework is working.
-├── test_parser.cpp            # Tests for SpaceSeparatedParser.
-├── test_temp_file.cpp         # Tests for TempFile (RAII behavior, file creation/deletion).
-├── test_file_handle.cpp       # Tests for SyscallFileHandle (read/write/seek).
-├── test_word_counter.cpp      # Integration-like test for WordCounter using small input files.
+word_counter/
+├── tests/
+│   ├── test_main.cpp           # Verifies that the test framework is working.
+│   ├── test_parser.cpp         # Tests for SpaceSeparatedParser.
+│   ├── test_temp_file.cpp      # Tests for TempFile (RAII behavior, file creation/deletion).
+│   ├── test_file_handle.cpp    # Tests for SyscallFileHandle (read/write/seek).
+│   ├── test_word_counter.          # Integration-like test for WordCounter using small input files.    
 
 ### How to Enable and Build Tests
 
